@@ -1,0 +1,13 @@
+Testing with repo: google-gemini/gemini-cli
+Testing with idea: implementing visualize feature where user can tell gemini to use visualize tool so gemini can show visualization easily
+
+--- Testing generate_gh_commands ---
+Generated Commands Object:
+{
+  "primary_command": "gh issue list --repo google-gemini/gemini-cli --limit 5 --state open --search \"visualize visualization tool\" --json number,title,url",
+  "fallback_command": "gh pr list --repo google-gemini/gemini-cli --limit 5 --state open --search \"visualize visualization tool\" --json number,title,url"
+}
+
+--- Testing execute_gh_command (Primary) ---
+Primary Result count: 2
+First item metadata: {'number': 18784, 'title': 'Experimental: Add experimental built-in visualization tools to Gemini CLI', 'url': 'https://github.com/google-gemini/gemini-cli/issues/18784'}
